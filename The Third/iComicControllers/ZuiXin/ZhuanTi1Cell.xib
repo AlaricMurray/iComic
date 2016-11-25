@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="zhuanti1" id="KGk-i7-Jjw" customClass="ZhuanTi1Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2by-QU-Ggt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="2by-QU-Ggt" secondAttribute="bottom" id="Dg2-IR-Hxv"/>
+                    <constraint firstItem="2by-QU-Ggt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Lta-0x-rTA"/>
+                    <constraint firstAttribute="trailing" secondItem="2by-QU-Ggt" secondAttribute="trailing" id="a5i-FZ-Fil"/>
+                    <constraint firstItem="2by-QU-Ggt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yed-ue-Uc9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icScrollView" destination="2by-QU-Ggt" id="auQ-Bq-oUa"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
